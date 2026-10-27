@@ -7,9 +7,24 @@ access:
 - schemaKey: AccessRequirements
   status: dandi:OpenAccess
 assetsSummary:
-  numberOfBytes: 0
-  numberOfFiles: 0
+  approach: []
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: analytical technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 469803385
+  numberOfFiles: 1
+  numberOfSubjects: 1
   schemaKey: AssetsSummary
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10090
+    name: Mus musculus - House mouse
+    schemaKey: SpeciesType
+  variableMeasured:
+  - ProcessingModule
 citation: 'Sheng, Kaiwen (2026) BrainStateDiff: widefield calcium imaging responses
   to natural images in two mice (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/002040/draft'
 contributor:
@@ -27,8 +42,11 @@ description: 'Preprocessed widefield calcium imaging trial clips from two mice, 
   spatial resolution. The frame interval is 0.024 seconds (approximately 41.67 Hz).
   The existing training, validation, and test partitions are preserved, with 64, eight,
   and eight trials per image per mouse, respectively. The release contains 12,480
-  trials and accompanies the BrainStateDiff modeling code. Recording dates and trial-to-session
-  assignments are unspecified; mouse ages and dates of birth have not been supplied.'
+  trials and accompanies the BrainStateDiff modeling code. The supplied recording
+  date is April 24, 2025, and both mice were three months old. Original trial-to-session
+  assignments and recording time of day are unspecified. NWB stores trial movies in
+  a processing table with within-trial relative frame times, preserving the source
+  values and split assignments without inventing intertrial chronology.'
 id: DANDI:002040/draft
 identifier: DANDI:002040
 keywords:
